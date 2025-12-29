@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.animate-float{
+    animation: anmate  2s ease-in-out alternate-reverse infinite;
+}
+
+
+@keyframes anmate{
+0%{
+    transform: translateY(20px);
+}
+
+100%{
+    transform: translateY(0px);
+}
+}
+
+.animated{
+animation: abouts 2s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes abouts{
+0%{
+    transform: translateY(20px);
+}
+
+100%{
+    transform: translateY(0px);
+}
+}
+
+
+
