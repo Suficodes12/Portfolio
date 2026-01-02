@@ -1,9 +1,25 @@
 // import React from 'react'
-    import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
+    import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+// import { FaInstagram } from "react-icons/fa6";
 // import { LiaLinkedin } from "react-icons/lia";
 
-export const Footer = () => {
+export const Footer = ({ skillsRef, ProjectRef, AboutRef, TopRef, contactRef }: any) => {
+      const scrollToSkills = () => {
+    skillsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToContact = () => {
+    contactRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+    const scrollToAbout = () => {
+    AboutRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+      const scrollToTop = () => {
+    TopRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+        const scrollToProject = () => {
+    ProjectRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
 
 <div className=' bg-black '> 
@@ -25,13 +41,13 @@ export const Footer = () => {
         <FaLinkedin size={18} />
       </a>
       <a 
-        href="#"
+        href="https://wa.link/mp9q3u"
         className="w-10 h-10 flex items-center justify-center border-2 border-orange-500 rounded-full text-orange-500 hover:bg-orange-500 hover:text-black transition-all duration-300"
       >
-        <FaInstagram size={18} />
+        <FaWhatsapp size={18} />
       </a>
       <a 
-        href="#"
+        href="https://github.com/Suficodes12"
         className="w-10 h-10 flex items-center justify-center border-2 border-orange-500 rounded-full text-orange-500 hover:bg-orange-500 hover:text-black transition-all duration-300"
       >
         <FaGithub size={18} />
@@ -40,11 +56,11 @@ export const Footer = () => {
 
     {/* Right: Quick Links (Optional) */}
     <div className="flex lg:gap-6 md:gap-6 gap-4">
-      <a href="#about" className="text-gray-400 hover:text-orange-500 transition-colors">Home</a>
-      <a href="#contact" className="text-gray-400 hover:text-orange-500 transition-colors">About</a>
-      <a href="#projects" className="text-gray-400 hover:text-orange-500 transition-colors">Skills</a>
-      <a href="#projects" className="text-gray-400 hover:text-orange-500 transition-colors">Project</a>
-      <a href="#projects" className="text-gray-400 hover:text-orange-500 transition-colors">Contact</a>
+      <a onClick={scrollToTop} className="text-gray-400 hover:text-orange-500     cursor-pointer transition-colors">Home</a>
+      <a onClick={scrollToAbout} className="text-gray-400 hover:text-orange-500   cursor-pointer transition-colors">About</a>
+      <a onClick={scrollToSkills} className="text-gray-400 hover:text-orange-500  cursor-pointer transition-colors">Skills</a>
+      <a onClick={scrollToProject} className="text-gray-400 hover:text-orange-500 cursor-pointer transition-colors">Project</a>
+      <a onClick={scrollToContact} className="text-gray-400 hover:text-orange-500 cursor-pointer transition-colors">Contact</a>
 
 
     </div>

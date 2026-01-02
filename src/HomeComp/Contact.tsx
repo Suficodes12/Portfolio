@@ -62,8 +62,8 @@ const Contact: React.FC = () => {
 
   const contactInfos: ContactInfo[] = [
     { type: 'Email', value: 'muhammadsufyann898 @gmail.com ', href: 'mailto:muhammadsufyann898@gmail.com', icon: <Mail size={24} /> },
-    { type: 'Whatsapp', value: '03142996621', href: 'https://wa.me/923142996621', icon: <MessageSquare size={24} /> },
-    { type: 'Phone', value: '03142996621', href: 'tel:+923142996621', icon: <Phone size={24} /> }
+    { type: 'Whatsapp', value: '03142996621', href: 'https://wa.link/mp9q3u', icon: <MessageSquare size={24} /> },
+    { type: 'Phone', value: '03142996621', href: 'https://wa.link/mp9q3u', icon: <Phone size={24} /> }
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

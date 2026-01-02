@@ -18,19 +18,19 @@ export const Third = () => {
       {/* Project Card 1 */}
       <div className="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
         <img
-          src="./assets/project1.png"
+          src="./assets/download.png"
           alt="Project 1"
           className="w-full h-56 object-cover"
         />
         <div className="p-6">
           <h2 className="text-xl font-semibold text-white mb-2">
-            JSPOT – E-Commerce
+           Aivaz Website
           </h2>
           <p className="text-gray-400 mb-4">
-            React + Vite + Tailwind CSS
+            Next.Js + Tailwind CSS +  Typescript
           </p>
           <a
-            href="#"
+            href="https://aivaz-esj5.vercel.app/"
             className="bg-orange-500 text-black px-5 py-2 rounded-full font-semibold hover:bg-orange-600 transition"
           >
             Live Demo
@@ -41,19 +41,19 @@ export const Third = () => {
       {/* Project Card 2 */}
       <div className="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
         <img
-          src="./assets/project2.png"
+          src="./assets/wedsquotes.png"
           alt="Project 2"
           className="w-full h-56 object-cover"
         />
         <div className="p-6">
           <h2 className="text-xl font-semibold text-white mb-2">
-            Apex-web-experts
+           WedsQuots-Admin Panel
           </h2>
           <p className="text-gray-400 mb-4">
-            React + Bootstrap
+            React + Typescript + Tailwind
           </p>
           <a
-            href="#"
+            href="http://wedsquotes-admin.netlify.app/"
             className="bg-orange-500 text-black px-5 py-2 rounded-full font-semibold hover:bg-orange-600 transition"
           >
             Live Demo
@@ -61,28 +61,55 @@ export const Third = () => {
         </div>
       </div>
 
-      {/* Project Card 3 */}
+     
+     
+  {/* Project Card 3 */}
       <div className="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
         <img
-          src="./assets/project3.png"
+          src="./assets/theiconic.png"
           alt="Project 3"
           className="w-full h-56 object-cover"
         />
         <div className="p-6">
           <h2 className="text-xl font-semibold text-white mb-2">
-            App Mastroe
+           The Iconic builder
           </h2>
           <p className="text-gray-400 mb-4">
-            Core-PHP + Bootstrap
+          Wordpress
           </p>
           <a
-            href="#"
+            href="https://theiconicbuilder.com/"
             className="bg-orange-500 text-black px-5 py-2 rounded-full font-semibold hover:bg-orange-600 transition"
           >
             Live Demo
           </a>
         </div>
       </div>
+
+      {/* Project Card 4 */}
+      <div className="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+        <img
+          src="./assets/Ecomerce.png"
+          alt="Project 3"
+          className="w-full h-56 object-cover"
+        />
+        <div className="p-6">
+          <h2 className="text-xl font-semibold text-white mb-2">
+            Mobile Store
+          </h2>
+          <p className="text-gray-400 mb-4">
+           Html + CSS + JavaScript
+          </p>
+          <a
+            href="https://dashing-elf-4efa17.netlify.app/samsung"
+            className="bg-orange-500 text-black px-5 py-2 rounded-full font-semibold hover:bg-orange-600 transition"
+          >
+            Live Demo
+          </a>
+        </div>
+      </div>
+
+     
 
     </div>
   </div>

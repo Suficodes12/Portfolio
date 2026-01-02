@@ -27,10 +27,11 @@ export const Second = () => {
           <br /><br />
           Over the years, I have worked on multiple projects ranging from small landing pages to fully-featured web applications. I constantly strive to learn new technologies and improve my skills to deliver high-quality solutions. My goal is to build web experiences that are not only functional but also visually appealing and enjoyable for users.
         </p>
-
+    <a href="./assets/cv/sufyanresume.pdf.pdf" download={"./assets/cv/sufyanresume.pdf.pdf"}>
         <button className="bg-orange-500 cursor-pointer text-black px-8 py-3 rounded-full font-semibold hover:bg-orange-600 transition">
-          View Resume
+        Download Cv
         </button>
+        </a>
       </div>
 
     </div>

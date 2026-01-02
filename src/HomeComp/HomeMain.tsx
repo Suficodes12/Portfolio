@@ -7,14 +7,29 @@ import { Second } from "./Second"
 import { Third } from "./Third"
 
 
-export const HomeMain = () => {
+export const HomeMain = ({TopRef, skillsRef, AboutRef, contactRef, ProjectRef }: any) => {
   return (
  <div className="conatiner mx-auto">
+ 
+ <div ref={TopRef}>
  <Banner/>
+</div>
+
+ <div ref={AboutRef}>
  <Second/>
+ </div>
+
+<div ref={ProjectRef}>
  <Third/>
- <FrontendSkills/>
- <Contact/>
+ </div>
+
+      <div ref={skillsRef}>
+        <FrontendSkills />
+      </div>
+
+  <div ref={contactRef}>
+        <Contact />
+      </div>
  </div>
   )
 }

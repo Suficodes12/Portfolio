@@ -1,5 +1,6 @@
 import  { useEffect, useState } from 'react'
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+// import { Link } from 'react-router-dom';
 // import TextType from './TextType';
 
 export const Banner = () => {
@@ -44,7 +45,7 @@ const texts: string[] = [
   return (
 
 
-<div className="bg-black">
+<div className="bg-black lg:py-12">
   <div className="container mx-auto px-6 py-14">
     <div className="grid grid-cols-1 md:grid-cols-2 items-center  gap-10">
 
@@ -72,21 +73,27 @@ const texts: string[] = [
         </p>
 
         {/* Buttons */}
-        <div className=" flex lg:flex-row md:flex-row flex-col gap-4 mb-8">
-          <button className="bg-orange-500 cursor-pointer duration-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition">
+        <div className=" flex  gap-4 mb-8">
+        <a href="mailto:muhammadsufyann898@gmail.com">  <button className="bg-orange-500 cursor-pointer duration-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition">
             Hire Me
-          </button>
+          </button></a>
 
-          <button className="border border-orange-500 cursor-pointer duration-700 text-orange-500 px-6 py-3 rounded-full font-semibold hover:bg-orange-500 hover:text-black transition">
+        <a href="https://wa.link/mp9q3u"><button className="border border-orange-500 cursor-pointer duration-700 text-orange-500 px-6 py-3 rounded-full font-semibold hover:bg-orange-500 hover:text-black transition">
             Let’s Talk
-          </button>
+          </button></a>
         </div>
 
         {/* Social Icons */}
         <div className="flex gap-5 text-2xl text-gray-300">
-          <FaLinkedin className="hover:text-orange-500 cursor-pointer transition" />
-          <FaWhatsapp className="hover:text-orange-500 cursor-pointer transition" />
-          <FaGithub className="hover:text-orange-500 cursor-pointer transition" />
+         <FaLinkedin className="hover:text-orange-500 cursor-pointer transition" />
+       <a
+  href="https://wa.link/mp9q3u"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaWhatsapp className="hover:text-orange-500 cursor-pointer transition" />
+</a>
+       <a href="https://github.com/Suficodes12"><FaGithub className="hover:text-orange-500 cursor-pointer transition" /></a>
         </div>
       </div>
 
